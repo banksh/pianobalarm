@@ -70,8 +70,8 @@ while(1):
 		if subprocess.call(['pidof','pianobar'], stdout=open(__import__('os').devnull,'wb')):
 			print 'Starting Pianobar instance...'
 			subprocess.call(['pianobar'])
-			open('/home/banks/.config/pianobar/ctl','a').write(station+'\n')
-		else:	open('/home/banks/.config/pianobar/ctl','a').write('p')
+			open('~/.config/pianobar/ctl','a').write(station+'\n')
+		else:	open('~/.config/pianobar/ctl','a').write('p')
 
 		break
 	time.sleep(1)
